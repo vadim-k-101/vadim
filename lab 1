@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<math.h>
+#include <locale.h>
+//я устав
+//хочу спати 
+/*чого не виходить */
+int main(void) {
+  int x;
+int A1;
+int A2;
+int A3;
+
+printf("Vedit 3 chusla: ");
+scanf("%d", &x);
+
+A1 = (x - (x % 100)) / 100;
+A2 = ((x - (x % 10)) - (x - (x % 100))) / 10;
+A3 = (x - (x % 1)) - (x - (x % 10)) / 1 ;
+A3 = (x % 10);
+  printf("\n\tVidpovid: %d%d%d",A3,A2,A1);
+  return 0;
+}
